@@ -29,7 +29,7 @@ public class HomePage {
 	
 	public void navigateToCIMB_Deals()
 	{
-		/*
+		
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		
 		try 
@@ -53,7 +53,7 @@ public class HomePage {
 		{
 			
 		}
-		*/
+		
 		driver.findElement(burger_menu).click();
 		
 		
