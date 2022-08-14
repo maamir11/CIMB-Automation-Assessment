@@ -38,11 +38,11 @@ public class BrowserFactory {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		return driver;
-	}
-	
-	public static void quitApp(WebDriver driver) 
-	{
-		driver.quit();
-	}
+		}
+		
+		public static void quitApp(WebDriver driver) 
+		{
+			driver.quit();
+		}
 	
 }

@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -17,11 +19,11 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class BaseClass {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	
-	public ExtentReports report;
+	public static ExtentReports report;
 	
-	public ExtentTest logger;
+	public static ExtentTest logger;
 	
 	@BeforeSuite
 	
@@ -32,19 +34,14 @@ public class BaseClass {
 		
 	}
 	
-	@BeforeClass
+	@BeforeMethod
 	public void setUp()
 	{
 	driver = BrowserFactory.startApp(driver, "Chrome", "https://www.cimb.com.my/en/personal/home.html");
 	}
 	
-/*
-	
-	
-	*/
-	
-	
 
+   
 	@AfterMethod
 
 	public void tearDownMethod(ITestResult result) throws IOException
@@ -61,15 +58,20 @@ public class BaseClass {
 			System.out.println("Test passed");
 		}
 		
-		report.flush();
 	}
-	/*
-	@AfterClass
+	
 	public void tearDown()
 	{
 		BrowserFactory.quitApp(driver); 
 	}
-	*/
+	
+	//@AfterClass
+	
+	
+	@AfterSuite
+	public void close_report() {
+		report.flush();
+	}
 	
 	
 }

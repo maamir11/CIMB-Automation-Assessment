@@ -14,36 +14,14 @@ import com.automation.utility.Helper;
 
 
 
-public class CIMSTestSuite extends BaseClass {
+public class CIMSTestSuite_TC02 extends BaseClass {
 	
 	
 	
-	
-	
-	@Test(priority=1,description="This is test case for exploring OctoTravel Visa Flights",enabled=true)
-	public void OctoTravelVisaFlightsDeals()
-	{
-		
-		
-		System.out.println(driver.getTitle());
-		
-		logger = report.createTest("View Octo Travel Visa Flights Deals");
-		
-		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-		
-		//logger.info("Starting the CIMB application");
-		
-		homePage.navigateToCIMB_Deals();
-		
-		logger.pass("Details of Octo Travel Visa Flights Deals shown successfully");
-		
-	}
-	
-	@Test(priority=2,description="This is test case for calculating Property Loan Repayment",enabled=true)
-	
+
+	@Test(priority=1,description="This is test case for calculating Property Loan Repayment",enabled=true)
 	public void PropertyLoanRepaymentCalculator () throws InterruptedException
 	{
-		
 		
 		System.out.println(driver.getTitle());
 		

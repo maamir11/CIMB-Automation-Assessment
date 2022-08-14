@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-14T18:13:31 IST" name="Default suite" finished-at="2022-08-14T18:15:30 IST" duration-ms="119308">
+  <suite started-at="2022-08-14T22:06:52 IST" name="CIMS Suite" finished-at="2022-08-14T22:12:36 IST" duration-ms="343703">
     <groups>
     </groups>
-    <test started-at="2022-08-14T18:13:31 IST" name="Default test" finished-at="2022-08-14T18:15:30 IST" duration-ms="119308">
-      <class name="com.automation.testcases.CIMSTestSuite">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.CIMSTestSuite@48ae9b55]" started-at="2022-08-14T18:13:31 IST" name="setUpSuite" finished-at="2022-08-14T18:13:31 IST" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.CIMSTestSuite@48ae9b55]" started-at="2022-08-14T18:13:31 IST" name="setUp" finished-at="2022-08-14T18:14:18 IST" duration-ms="47297" status="PASS">
+    <test started-at="2022-08-14T22:06:52 IST" name="Test" finished-at="2022-08-14T22:12:36 IST" duration-ms="343703">
+      <class name="com.automation.testcases.CIMSTestSuite_TC02">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC02@50a638b5]" started-at="2022-08-14T22:10:28 IST" name="setUp" finished-at="2022-08-14T22:11:01 IST" duration-ms="32384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="PropertyLoanRepaymentCalculator()[pri:2, instance:com.automation.testcases.CIMSTestSuite@48ae9b55]" started-at="2022-08-14T18:14:18 IST" name="PropertyLoanRepaymentCalculator" description="This is test case for calculating Property Loan Repayment" finished-at="2022-08-14T18:15:27 IST" duration-ms="68946" status="PASS">
+        <test-method signature="PropertyLoanRepaymentCalculator()[pri:1, instance:com.automation.testcases.CIMSTestSuite_TC02@50a638b5]" started-at="2022-08-14T22:11:01 IST" name="PropertyLoanRepaymentCalculator" description="This is test case for calculating Property Loan Repayment" finished-at="2022-08-14T22:12:36 IST" duration-ms="94834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PropertyLoanRepaymentCalculator -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.CIMSTestSuite@48ae9b55]" started-at="2022-08-14T18:15:28 IST" name="tearDownMethod" finished-at="2022-08-14T18:15:30 IST" duration-ms="2860" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC02@50a638b5]" started-at="2022-08-14T22:12:36 IST" name="tearDownMethod" finished-at="2022-08-14T22:12:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PropertyLoanRepaymentCalculator status=SUCCESS method=CIMSTestSuite.PropertyLoanRepaymentCalculator()[pri:2, instance:com.automation.testcases.CIMSTestSuite@48ae9b55] output={null}]]]>
+                <![CDATA[[TestResult name=PropertyLoanRepaymentCalculator status=SUCCESS method=CIMSTestSuite_TC02.PropertyLoanRepaymentCalculator()[pri:1, instance:com.automation.testcases.CIMSTestSuite_TC02@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-      </class> <!-- com.automation.testcases.CIMSTestSuite -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.automation.testcases.CIMSTestSuite_TC02 -->
+      <class name="com.automation.testcases.CIMSTestSuite_TC01">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf]" started-at="2022-08-14T22:06:52 IST" name="setUpSuite" finished-at="2022-08-14T22:06:52 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf]" started-at="2022-08-14T22:06:52 IST" name="setUp" finished-at="2022-08-14T22:07:32 IST" duration-ms="40332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OctoTravelVisaFlightsDeals()[pri:1, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf]" started-at="2022-08-14T22:07:32 IST" name="OctoTravelVisaFlightsDeals" description="This is test case for exploring OctoTravel Visa Flights" finished-at="2022-08-14T22:10:28 IST" duration-ms="176053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OctoTravelVisaFlightsDeals -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf]" started-at="2022-08-14T22:10:28 IST" name="tearDownMethod" finished-at="2022-08-14T22:10:28 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OctoTravelVisaFlightsDeals status=SUCCESS method=CIMSTestSuite_TC01.OctoTravelVisaFlightsDeals()[pri:1, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="close_report()[pri:0, instance:com.automation.testcases.CIMSTestSuite_TC01@31d7b7bf]" started-at="2022-08-14T22:12:38 IST" name="close_report" finished-at="2022-08-14T22:12:41 IST" duration-ms="3056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_report -->
+      </class> <!-- com.automation.testcases.CIMSTestSuite_TC01 -->
+    </test> <!-- Test -->
+  </suite> <!-- CIMS Suite -->
 </testng-results>
