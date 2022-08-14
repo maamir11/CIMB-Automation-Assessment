@@ -1,3 +1,5 @@
+//This class contains the xpaths of web elements of 2nd test case. It also includes the method implementation of the test to be performed
+
 package com.automation.pages;
 
 import java.util.Set;
@@ -34,17 +36,6 @@ public class CalculatorPage {
 		By cookies=By.xpath("//*[@Class='btn-consent-accept variant-bg-white body-text-3 ml-auto']");
 		
 		By profit_affordability_calculator=By.xpath("(//*[@class='label text-sm sm:text-base pr-5'])[4]");
-		
-		/*By gross_monthly_income=By.xpath("(//*[@class='input-container'])[1]");
-		
-		By monthly_net_income=By.xpath("(//*[@class='input-container'])[2]");
-		
-		By total_monthly_expenses=By.xpath("(//*[@class='input-container'])[3]");
-		
-		By loan_period=By.xpath("(//*[@class='input-container'])[4]");
-		
-		By rate_per_annum=By.xpath("(//*[@class='input-container'])[5]");
-			*/
 		
 		By estimated_monthly_payment_header=By.xpath("//span[text()='Your Estimated Monthly Payment']");
 		
@@ -99,8 +90,6 @@ public class CalculatorPage {
 					driver.switchTo().window(child);
 					System.out.println("Switched to new tab");
 					
-					//driver.findElement(cookies).click();
-					//driver.findElement(gross_monthly_income).click();
 					
 					WebElement gross_monthly_income=driver.findElement(By.xpath("(//*[@class='input-container'])[1]"));
 					Actions gmiAct=new Actions(driver);				
@@ -126,8 +115,7 @@ public class CalculatorPage {
 					
 					Assert.assertEquals(true, driver.findElement(estimated_monthly_payment_header).isDisplayed()); 
 					Assert.assertEquals(true, driver.findElement(estimated_monthly_payment).isDisplayed());
-					//driver.findElement(estimated_monthly_payment).isDisplayed();
-					//String expected_estimated_monthly_payment_value= "3,094.74";
+					
 			
 					Assert.assertEquals(true, driver.findElement(max_loan_amount_header).isDisplayed()); 
 					Assert.assertEquals(true, driver.findElement(max_loan_amount).isDisplayed());
