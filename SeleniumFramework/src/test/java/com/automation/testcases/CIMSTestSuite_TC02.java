@@ -1,3 +1,5 @@
+//This class is the 2nd test case of functional scenario which inherits functionalities of the base class
+
 package com.automation.testcases;
 
 
