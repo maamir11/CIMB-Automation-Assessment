@@ -1,3 +1,5 @@
+//This class contains the xpaths of web elements of 1st test case. It also includes the method implementation of the test to be performed
+
 package com.automation.pages;
 
 import java.util.concurrent.TimeUnit;
@@ -51,19 +53,7 @@ public class HomePage {
 	
 	public void navigateToCIMB_Deals()
 	{
-		/*
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		
-		try 
-		{
-			Thread.sleep(40000);
-		} 
-		catch (InterruptedException e) 
-		{
-			
-		}
-		
-		*/
+	
 		// Create object of WebDriverWait class
 
 		WebDriverWait wait=new WebDriverWait(driver,40);
@@ -76,23 +66,6 @@ public class HomePage {
 		
 		driver.findElement(popup_close).click();
 		
-		/*
-		try 
-		{
-			Thread.sleep(40000);
-		} 
-		catch (InterruptedException e) 
-		{
-			
-		}
-		*/
-		//WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(burger_menu));
-		
-		//WebDriverWait wait1=new WebDriverWait(driver,50);
-		
-		//WebElement element1=wait.until(ExpectedConditions.visibilityOfElementLocated(burger_menu));
-		
-		//driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		
 		try 
 		{
@@ -104,20 +77,6 @@ public class HomePage {
 		}
 		driver.findElement(burger_menu).click();
 		
-		/*
-		try 
-		{
-			Thread.sleep(10000);
-		} 
-		catch (InterruptedException e) 
-		{
-			
-		}
-		*/
-		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(cimb_deals));
-		//driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		
 		try 
 		{
@@ -129,8 +88,7 @@ public class HomePage {
 		}
 		driver.findElement(cimb_deals).click();
 		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(county_selection));
+		
 		try 
 		{
 			Thread.sleep(40000);
@@ -140,9 +98,7 @@ public class HomePage {
 			
 		}
 		driver.findElement(county_selection).click();
-		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(travel_btn));
+	
 		try 
 		{
 			Thread.sleep(40000);
@@ -153,31 +109,18 @@ public class HomePage {
 		}
 		driver.findElement(travel_btn).click();
 		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(viewAll_btn));
+		
 		driver.findElement(viewAll_btn).click();
 		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(octaTravel_card));
+		
 		driver.findElement(octaTravel_card).click();
 		
-		//wait=new WebDriverWait(driver,20);
-		//element=wait.until(ExpectedConditions.visibilityOfElementLocated(discountHeader));
+	
 		driver.findElement(discountHeader).getText().contains("Highlights");
 		driver.findElement(discountDescription).getText().contains("Enjoy 30% discount on your domestic flights when you book only on OctoTravel website or mobile app!");		
 		driver.findElement(similarDeals_header).getText().contains("Similar Deals");
 		
-		
-		/*
-		try 
-		{
-			Thread.sleep(10000);
-		} 
-		catch (InterruptedException e) 
-		{
-			
-		}
-		*/		
+				
 	}
 	
 
