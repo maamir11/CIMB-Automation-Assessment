@@ -1,3 +1,5 @@
+//This class includes the implementation methods of launching and closing the web browser.
+
 package com.automation.utility;
 
 import java.util.concurrent.TimeUnit;
