@@ -1,3 +1,5 @@
+//This class includes methods of capturing a screenshot and fetching dynamic date while saving the screenshot in the output folder
+
 package com.automation.utility;
 
 import java.io.File;
