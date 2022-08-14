@@ -1,3 +1,5 @@
+//This class contains method for report generation in the framework. It also includes methods such as launching and closing the browser.
+
 package com.automation.utility;
 
 import java.io.File;
@@ -60,12 +62,16 @@ public class BaseClass {
 		
 	}
 	
+	
+	
+	@AfterClass
+	
 	public void tearDown()
 	{
 		BrowserFactory.quitApp(driver); 
 	}
 	
-	//@AfterClass
+	
 	
 	
 	@AfterSuite
