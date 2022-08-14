@@ -39,11 +39,7 @@ public class BaseClass {
 	}
 	
 /*
-	@AfterClass
-	public void tearDown()
-	{
-		BrowserFactory.quitApp(driver); 
-	}
+	
 	
 	*/
 	
@@ -61,13 +57,19 @@ public class BaseClass {
 		
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
+			//logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
+			System.out.println("Test passed");
 		}
 		
 		report.flush();
 	}
-	
-	
+	/*
+	@AfterClass
+	public void tearDown()
+	{
+		BrowserFactory.quitApp(driver); 
+	}
+	*/
 	
 	
 }

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.testcases.HomeTest">
+      <class name="com.automation.testcases.CIMSTestSuite">
         <methods>
           <include name="tearDownMethod"/>
+          <include name="PropertyLoanRepaymentCalculator"/>
           <include name="setUpSuite"/>
           <include name="setUp"/>
-          <include name="loginApp"/>
         </methods>
-      </class> <!-- com.automation.testcases.HomeTest -->
+      </class> <!-- com.automation.testcases.CIMSTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
