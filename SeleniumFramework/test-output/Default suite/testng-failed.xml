@@ -6,6 +6,7 @@
       <class name="com.automation.testcases.CIMSTestSuite">
         <methods>
           <include name="tearDownMethod"/>
+          <include name="tearDown"/>
           <include name="PropertyLoanRepaymentCalculator"/>
           <include name="setUpSuite"/>
           <include name="setUp"/>
